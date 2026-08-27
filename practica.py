@@ -1,8 +1,8 @@
-edades = [13,16,11,10,0,18,25,42]
-for elemento in edades:
-    if elemento == 0:
-        print ("ERROR")
-    elif elemento < 18:
-        print ("Menor de edad")
+def calcular_descuento(descuento):
+    if descuento < 100:
+        return "No aplica descuento"
     else:
-        print ("Mayor de edad")
+        return "Aplica descuento"
+descuento = int(input("cual es el valor del producto?"))
+resultado = calcular_descuento(descuento)
+print (resultado)
